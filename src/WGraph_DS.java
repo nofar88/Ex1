@@ -159,9 +159,12 @@ public class WGraph_DS implements weighted_graph, Serializable {
         return modeCount;
     }//O(1)
 
+    /**
+     * thr function updates and sets a new value to MC
+     * @param t - new integer to assign to MC
+     */
     public void setMC(int t) {//O(1)
         this.modeCount=t;
-
     }
 
     @Override
@@ -216,18 +219,34 @@ public class WGraph_DS implements weighted_graph, Serializable {
             id_counter++;
         }
 
+        /**
+         * the function return the predator
+         * @return an integer represents the pred's key
+         */
         public int getPred() {
             return pred;
         }//O(1)
 
+        /**
+         * thr function sets a new value to pred
+         * @param pred - the key of the new pred
+         */
         public void setPred(int pred) {
             this.pred = pred;
         }//O(1)
 
+        /**
+         * thr function checks whether this node had already visited
+         * @return true if the node was visited before, and false otherwise
+         */
         public boolean isVisited() {
             return visited;
         }//O(1)
 
+        /**
+         * the function sets a new value which indicates if the node has been visited or not
+         * @param visited - boolean represents the new value
+         */
         public void setVisited(boolean visited) {
             this.visited = visited;
         }//O(1)
