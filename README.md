@@ -9,7 +9,7 @@
  1. `NodeInfo` - A class that implements node_info and represents a single vertex.
  2. `EdgeData` - A class that implements edge_data and represents a single edge.
  3. `WGraph_DS` - A class that implements weighted_graph and represents a weighted non-directional graph that can contain multiple nodes and edges. I used HashMap data structure because the methods of this data structure have really good complexity that helped me be efficient, for example add, delete, and other functions all on average of O(1).
-    4. `WGraph_algo` - A class that impements weighted_graph_algorithms and executes and computes algorithms on graphs.
+ 4. `WGraph_algo` - A class that impements weighted_graph_algorithms and executes and computes algorithms on graphs.
     
 
 ## Remarks & notes:
