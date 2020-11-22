@@ -30,7 +30,7 @@ public class WGraph_DSTest {
     public void nodesTest2() {
         WGraph_DS graph = new WGraph_DS();
         assertEquals(0, graph.nodeSize());
-        assertEquals(0, graph.getV().size());// בודק לי את כמות הקודקודים שיש ברשימה
+        assertEquals(0, graph.getV().size());
         assertThrows(NullPointerException.class, () -> graph.getNode(5).getKey());
     }
 
