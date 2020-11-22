@@ -24,22 +24,22 @@
  - My project includes test files to all of the mentioned classes and functionality.
 ## Function explanations:
 
-**hasEdge**- checks if there is a edge between two nodes
-**getEdge**- Returns the edge with its weight.
-**connect**- creates a edge between two nodes, if the edge we want to create exists then just update the weight of the edge.
-**removeNode**- Deleting a node in a graph, when I delete a node in a graph I have to take care of deleting the edges that are connected to the deleted node, i.e. I have to delete myself from my list of neighbors,
-**removeEdge**- Deleting a edge in a graph, when I delete a edge I have to make sure that the deletion of the edge is to the two nodes to which it is attached. I.e. two-way erasure.
-**init**- A function that takes care of initializing the graph.
+**hasEdge**- checks if there is a edge between two nodes <br>
+**getEdge**- Returns the edge with its weight. <br>
+**connect**- creates a edge between two nodes, if the edge we want to create exists then just update the weight of the edge. <br>
+**removeNode**- Deleting a node in a graph, when I delete a node in a graph I have to take care of deleting the edges that are connected to the deleted node, i.e. I have to delete myself from my list of neighbors,<br>
+**removeEdge**- Deleting a edge in a graph, when I delete a edge I have to make sure that the deletion of the edge is to the two nodes to which it is attached. I.e. two-way erasure.<br>
+**init**- A function that takes care of initializing the graph.<br>
 **isConnected**- checks if the graph is a linked graph or not. I implemented the function so the idea behind it is to use my knowledge that  if I can not get from one node to another node i.e. there is no path between them then the distance is infinite.
-I used the shortestPathDist function that I implemented, the function knows how to go through the whole graph. So I know that if I sent to a function and got an infinity that means there is no path between two particular nodes then the graph is not a link.
+I used the shortestPathDist function that I implemented, the function knows how to go through the whole graph. So I know that if I sent to a function and got an infinity that means there is no path between two particular nodes then the graph is not a link. <br>
 
 **shortestPathDist**- I implemented the function by the **Dijkstra** algorithm that I learned in the lecture. The algorithm goes through all the nodes in the graph, and solves the problem of finding the "cheapest" route from a source node to a target node in a weighted graph.
 The algorithm works like this: at first all the nodes are marked as not visited, and their distance is defined as infinity, except for the first node whose distance will be set to 0. Then I go over all the neighbors of that node and update their weight, and insert them to a queue.
 Then, one by one, I take out a node from the queue which has the minimum weight, and check for the node's neighbors. **I always update the weight to be the cheapest weight.**
-The algorithm is over when we finished going through all the nodes in the queue.
-**shortestPath**- Returns a list of vertices with the shortest path, the implemention of the function is done using a Dijkstra algorithm.
-**save**- saves to the file the graph I am working on.
-**load**- Restores the graph from the file.
+The algorithm is over when we finished going through all the nodes in the queue.<br>
+**shortestPath**- Returns a list of vertices with the shortest path, the implemention of the function is done using a Dijkstra algorithm. <br>
+**save**- saves to the file the graph I am working on. <br>
+**load**- Restores the graph from the file. <br>
 
 
 
